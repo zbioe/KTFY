@@ -1,7 +1,7 @@
 #+TITLE: K8s To/From Yaml
 
 * Description
-Simple form to get yours resourrces from your k8s cluster in yaml format, and can apply again
+Get a list of your resources from your k8s cluster in yaml format, and apply it again
 
 * Usage
 
@@ -10,7 +10,6 @@ make backup|restore <resources="[RESOURCE]...">
 #+END_SRC
 
 ** Default Resources
-default resources are:
 - service
 - deployment
 - secret
