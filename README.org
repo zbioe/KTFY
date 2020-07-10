@@ -1,40 +1,39 @@
 #+TITLE: K8s To/From Yaml
 
-* Description
-Get a list of your resources from your k8s cluster in yaml format, and apply it again
+Get a list of your resources from your k8s cluster in yaml format and apply it again
 
-* Usage
+** Usage
 
-#+BEGIN_SRC shell
-make backup|restore <resources="[RESOURCE]...">
-#+END_SRC
+ #+BEGIN_SRC shell
+ make backup|restore <resources="[RESOURCE]...">
+ #+END_SRC
 
-** Default Resources
-- service
-- deployment
-- secret
-- pv
+*** Default Resources
+ - service
+ - deployment
+ - secret
+ - pv
 
-* Examples
+** Examples
 
-Example custom resources backup
-#+BEGIN_SRC shell
-make backup resources="pvc pv service secret deployment"
-#+END_SRC
+ Example custom resources backup
+ #+BEGIN_SRC shell
+ make backup resources="pvc pv service secret deployment"
+ #+END_SRC
 
-Example default resources backup
-#+BEGIN_SRC shell
-make backup
-#+END_SRC
+ Example default resources backup
+ #+BEGIN_SRC shell
+ make backup
+ #+END_SRC
 
-Example custom resources restore
-#+BEGIN_SRC shell
-make restore resources="serivce deployment"
-#+END_SRC
+ Example custom resources restore
+ #+BEGIN_SRC shell
+ make restore resources="serivce deployment"
+ #+END_SRC
 
-Example default resources restore
-#+BEGIN_SRC shell
-make restore
-#+END_SRC
+ Example default resources restore
+ #+BEGIN_SRC shell
+ make restore
+ #+END_SRC
 
 
