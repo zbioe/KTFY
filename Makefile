@@ -1,4 +1,4 @@
-resources ?= serivce deployment secret pv
+resources ?= serivce deployment secret
 
 backup:
 	bash backupK8s.sh $(resources)

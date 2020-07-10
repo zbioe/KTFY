@@ -12,7 +12,6 @@ Get a list of your resources from your k8s cluster in yaml format and apply it a
  - service
  - deployment
  - secret
- - pv
 
 ** Examples
 
