@@ -1,6 +1,6 @@
 #+TITLE: K8s To/From Yaml
 
-Get a list of your resources from your k8s cluster in yaml format and apply it again
+Back up and restore Kubernetes cluster resources
 
 ** Usage
 
