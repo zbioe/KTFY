@@ -6,6 +6,7 @@ Get a list of your resources from your k8s cluster in yaml format and apply it a
 
  #+BEGIN_SRC shell
  make backup|restore <resources="[RESOURCE]...">
+ make backup|restore <resources="[RESOURCE]..."> <prefix=[PATH]>
  #+END_SRC
 
 *** Default Resources
