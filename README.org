@@ -68,16 +68,16 @@ Back up and restore Kubernetes cluster resources
 *** Usage
     Backup
     #+BEGIN_SRC text
-    Usage: backupK8s.sh [RESOURCE]...
+    Usage: kty.sh [RESOURCE]...
 
     Examples:
-      backupK8s.sh services deployment
+      kty.sh services deployment
     #+END_SRC
     Restore
     #+BEGIN_SRC text
-    Usage: restoreK8s.sh [RESOURCE]...
+    Usage: kfy.sh [RESOURCE]...
     
     Examples:
-      restoreK8s.sh services deployment
+      kfy.sh services deployment
     #+END_SRC
 

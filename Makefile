@@ -1,7 +1,7 @@
 prefix ?= ./out
 resources ?= service deployment secret ingress namespace sc pv pvc pc job endpoints statefulset networkpolicy apiservice configmap serviceaccount clusterrole pdb resourcequota role rolebinding
-backup=$(PWD)/backupK8s.sh
-restore=$(PWD)/restoreK8s.sh
+backup=$(PWD)/kty.sh
+restore=$(PWD)/kfy.sh
 
 prefix:
 	mkdir -p $(prefix)
