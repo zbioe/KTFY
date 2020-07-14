@@ -58,4 +58,26 @@ Back up and restore Kubernetes cluster resources
     make restore
     #+END_SRC
 
+** Install
+   You can move the scripts to some bin folder with
+
+   #+BEGIN_SRC shell
+   make install prefix="$HOME/bin"
+   #+END_SRC
+
+*** Usage
+    Backup
+    #+BEGIN_SRC text
+    Usage: backupK8s.sh [RESOURCE]...
+
+    Examples:
+      backupK8s.sh services deployment
+    #+END_SRC
+    Restore
+    #+BEGIN_SRC text
+    Usage: restoreK8s.sh [RESOURCE]...
+    
+    Examples:
+      restoreK8s.sh services deployment
+    #+END_SRC
 

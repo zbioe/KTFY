@@ -11,3 +11,6 @@ restore:
 
 backup.tar.gz: backup
 	cd $(prefix); tar --remove-files -czf backup.tar.gz $(resources)
+
+install:
+	cp $(backup) $(restore) $(prefix)
